@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="images/icono.ico">
+    <link rel="stylesheet" href="diseños/principal.css">
+    <title>INICIO</title>
+<style>
+     body{
+        background: url(images/fondo.jpg);
+        background-size: cover;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-top: 200px;
+        color: white;
+    }
+    table{
+        margin-left:auto;
+        margin-right:auto;
+    }
+    input[type=text]{
+        padding: 12px;
+        border: 2px solid rgb(0, 0, 0);
+        margin-top: 6px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+    input[type=password]{
+        padding: 12px;
+        border: 2px solid rgb(0, 0, 0);
+        margin-top: 6px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+    input[type=submit]{
+        padding: 10px;
+        border: 2px solid rgb(0, 0, 0);
+        margin-right: 8px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        width: 170px;
+    }
+    p{
+        padding-right: 4px;
+        float: right;
+    }
+    b{
+        font-size:20px;;
+    }
+    .tabla table{
+        margin-left:auto;
+        margin-right:auto;
+        border: 2px solid white;
+        border-collapse: collapse;
+        width: 700px;
+        height: 300px;
+    }
+</style>
+</head>
+
+<body>
+    <Table style="background-color: rgba(138, 138, 138, 0.267);">
+        <tr>
+            <td>
+                <b>Iniciar Sesion</b>
+                <div class="tabla">
+                <table>
+                    <tr>
+                        <td> 
+                            <form action="usuario/sesion.php" method="post" ><br><br>
+                                <center><img src="images/usuario.png" width="60px"></center>
+                                <center><input type="text" name="usuario" placeholder="INGRESE USUARIO"></center><br>
+                                <center><img src="images/contraseña.png" width="60px"></center>
+                                <center><input type="password" name="contraseña" placeholder="INGRESE CONTRASEÑA"></center><br>
+                                <p><input type="submit" value="INGRESAR" name="ini">
+                                <input type="submit" value="REGISTRARSE" name="re"></p>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            </td>
+        </tr>
+    </Table>
+</body>
+</html>
