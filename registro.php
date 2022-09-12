@@ -4,7 +4,7 @@
   error_reporting(0);
 
   if (isset($_SESSION["usuario"])) {
-    header("Location:cerrar.php");
+    header("Location:bienvenida.html");
   }
   if (isset($_POST["registrarse"])) {
     $nombre=$_POST["nombre"];
@@ -22,12 +22,10 @@
         $result=mysqli_query($conn,$query);
         if ($result) {
           echo"<script>alert('Usuario registrado con éxito')</script>";
-          $nombre="";
-          $apellido="";
-          $usuario="";
-          $_POST["contraseña"]="";
-          $_POST["ccontraseña"]="";
+          echo '<script>window.location="index.php"</script>';
+          
         }
+        
         else {
           echo "<script>alert('Hay un error')</script>";
         }
@@ -53,10 +51,6 @@
   </head>
   <body>
 
-
-    <?php if(!empty($message)): ?>
-      <p> <?= $message ?></p>
-    <?php endif; ?>
 
     <h1>registrarse</h1>
     o <a href="sesion.php">Iniciar sesion</a>
