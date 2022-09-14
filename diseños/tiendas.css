@@ -1,0 +1,45 @@
+.botones{
+    width: 99.191%;
+    text-align: center;
+    font-size:x-large;
+    
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  h1{
+    padding-left:50px ;
+    padding-top:20px; 
+    color:#1D4771;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 30px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 30px;
+  }
+  .mapas{
+    border: 4px solid black;
+    width: 608px;
+    height: 308px;
+    margin-left: 50px;
+  }
+  .datos{
+    width: 400px;
+  }
+  .titulo{
+    color: #1D4771;
+    font-size: 20px;
+  }
+  .dat {
+    font-size: 15px;
+    color: #1D4771;
+    float: left;
+    text-align: left;
+  }

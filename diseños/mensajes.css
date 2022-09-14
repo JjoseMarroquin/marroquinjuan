@@ -1,0 +1,43 @@
+.botones{
+    width: 99.191%;
+    text-align: center;
+    font-size:x-large;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  h1{
+    padding-left:50px ;
+    padding-top:20px; 
+    color:#1D4771;
+  }
+  table {
+    width: 90%;
+    margin-left: 50px;
+    font-size: 20px;
+    
+
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 16px;
+  }
+  .pdf
+    input[type=submit] {
+      color: rgb(0, 0, 0);
+      padding: 12px 20px;
+      border: 1 solid rgb(0, 0, 0);
+      border-radius: 1px;
+      cursor: pointer;
+      width: 30%;
+      background-color: rgba(38, 32, 85, 0.295);
+    }
+    
+    input[type=submit]:hover {
+      background-color: #2b3a64a2;
+      color: #e9e9e9;
+  
+    
+  }

@@ -3,41 +3,536 @@
 <html lang="es">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <style>
-      .botones{
-        width: 99.2%;
-        text-align: center;
-        font-size:x-large;
-      }
-      a{
-        text-decoration: none;
-        color: white;
-      }
-      h1{
-        margin-top: 10px;
-        margin-left: 20px;
-      }
-    </style>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="shortcut icon" type="image/x-icon" href="images/icono.ico">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <link rel="stylesheet" href="diseños/pie.css">
+      <link rel="stylesheet" href="diseños/productos.css">
+      <link rel="stylesheet" href="diseños/efectoproductos.css">
+      <link rel="stylesheet" href="diseños/información.css">
     <title>Productos</title>
   </head>
   <body>
     <div class="botones" >
       <div class="row">
-        <div class="col-4" style="background-color:#4d7080;">
+        <div class="col-4" style="background-color:#F6AE30;">
           <a href="bienvenida.html"> Inicio</a>
         </div>
-        <div class="col-4" style="background-color:rgb(23, 36, 77);">
+        <div class="col-4" style="background-color:#30C6F6;">
           <a href="tiendas.html">Tiendas</a> 
         </div>
-        <div class="col-4" style="background-color:rgb(45, 39, 80);">
-          <a href="contactenos.html">Contáctenos</a> 
+        <div class="col-4" style="background-color:#1D4771;">
+          <a href="contactenos.php">Contáctenos</a> 
         </div>
       </div>
     </div>
-    <h1>Productos\Servicios</h1>
+    <h1 >Productos</h1>
+    <div class="grid-container">
+      <div>
+        <div class="p1">
+          <figure>
+            <img src="images/productos/p1.jpg" height="200px" width="324px">
+            <div class="capa">
+              <h1>Toyota Agya</h1>
+            </div>
+          </figure>
+        </div>
+        <div class="nom">
+          <b>Toyota Agya - 6P23</b> 
+        </div>
+        <div class="precio">
+          Precio: Q106,990.00
+        </div><br>
+        <div>
+          <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Más Información</button>
+          <div id="id01" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="images/productos/informacion/p1.webp" alt="Avatar" class="avatar">
+              </div>
+              <div class="inf">
+                <label><b>Toyota Agya</b></label><br>
+                <p>El Agya permite conducir por la ciudad fácilmente y con diversión, a la vez que logra una ágil conducción y una economía de combustible sobresaliente. La conducción también le permitirá estimular sus sentidos y agilizar su mente.</p>
+                </div>
+            </form>
+          </div>
+        </div><br>
+      </div>
+      <div>
+        <div class="p1">
+          <figure>
+            <img src="images/productos/p2.jpg" height="200px" width="324px">
+            <div class="capa">
+              <h1>Toyota Yaris Hatchback</h1>
+            </div>
+          </figure>
+        </div>
+        <div class="nom">
+          <b>Toyota Yaris Hatchback - Q7-23</b> 
+        </div>
+        <div class="precio">
+          Precio: Q154,990.00
+        </div><br>
+        <div>
+          <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Más Información</button>
+          <div id="id02" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close modal">&times;</span>
+                <img src="images/productos/informacion/p2.webp" alt="Avatar" class="avatar">
+              </div>
+              <div class="inf">
+                <label><b>Toyota Yaris Hatchback</b></label><br>
+                <p>El Yaris Hatchback es un auto dinámico, con un look atrevido y más deportivo que te sorprenderá.</p>
+               </div>
+            </form>
+          </div>
+        </div><br>
+      </div>
+      <div>
+        <div class="p1">
+          <figure>
+            <img src="images/productos/p3.jpg" height="200px" width="324px">
+            <div class="capa">
+              <h1>Toyota Yaris Sedán</h1>
+            </div>
+          </figure>
+        </div>
+        <div class="nom">
+          <b>Toyota Yaris Sedán - PQ-23</b> 
+        </div>
+        <div class="precio">
+          Precio: Q175,990.00
+        </div><br>
+        <div>
+          <button onclick="document.getElementById('id03').style.display='block'" style="width:auto;">Más Información</button>
+          <div id="id03" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="images/productos/informacion/p3.webp" alt="Avatar" class="avatar">
+              </div>
+              <div class="inf">
+                <label><b>Toyota Yaris Sedán</b></label><br>
+                <p>El Yaris Sedán va más allá de sus características ya conocidas, se perfeccionó con líneas fuertes para darle un look más robusto y de vanguardia. Ahora da un paso gigante en su personalidad superando detalles de diseño externo e interno, generando un “valor más allá de lo imaginable”, siempre a la vanguardia de la industria.</p>
+               </div>
+            </form>
+          </div>
+        </div><br>
+      </div>
+      <div>
+        <div class="p1">
+          <figure>
+            <img src="images/productos/p4.jpg" height="200px" width="324px">
+            <div class="capa">
+              <h1>Toyota Corolla</h1>
+            </div>
+          </figure>
+        </div>
+        <div class="nom">
+          <b>Toyota Corolla - CHV-23</b> 
+        </div>
+        <div class="precio">
+          Precio: Q220,990.00
+        </div><br>
+        <div>
+          <button onclick="document.getElementById('id04').style.display='block'" style="width:auto;">Más Información</button>
+          <div id="id04" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="images/productos/informacion/p4.webp" alt="Avatar" class="avatar">
+              </div>
+              <div class="inf">
+                <label><b>Toyota Corolla</b></label><br>
+                <p> Toyota Corolla, cool por dentro y por fuera, con un diseño renovado más fresco y deportivo que nunca, que capta miradas y con materiales de última tendencia, transformamos lo que ya conocías en algo totalmente extraordinario, renovamos sus interiores e intentamos crear nuevas experiencias de manejo.</p>
+              </div>
+            </form>
+          </div>
+        </div><br>
+      </div>
+      <div>
+        <div class="p1">
+          <figure>
+            <img src="images/productos/p5.jpg" height="200px" width="324px">
+            <div class="capa">
+              <h1>Toyota Avanza</h1>
+            </div>
+          </figure>
+        </div>
+        <div class="nom">
+          <b>Toyota Avanza - X3-23</b> 
+        </div>
+        <div class="precio">
+          Precio: Q167,990.00
+        </div><br>
+        <div>
+          <button onclick="document.getElementById('id05').style.display='block'" style="width:auto;">Más Información</button>
+          <div id="id05" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id05').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="images/productos/informacion/p5.webp" alt="Avatar" class="avatar">
+              </div>
+              <div class="inf">
+                <label><b>Toyota Avanza</b></label><br>
+                <p>La Toyota Avanza recibe una renovación, ahora con una apariencia más moderna te ofrece la máxima versatilidad y el confort que estabas buscando, junto a la tecnología que querías lista para resolver todas tus necesidades.</p>
+                </div>
+            </form>
+          </div>
+        </div><br>
+      </div>
+      <div>
+        <div class="p1">
+          <figure>
+            <img src="images/productos/p6.jpg" height="200px" width="324px">
+            <div class="capa">
+              <h1>Toyota Rush</h1>
+            </div>
+          </figure>
+        </div>
+        <div class="nom">
+          <b>Toyota Rush - JT--23</b> 
+        </div>
+        <div class="precio">
+          Precio: Q202,990.00
+        </div><br>
+        <div>
+          <button onclick="document.getElementById('id06').style.display='block'" style="width:auto;">Más Información</button>
+          <div id="id06" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id06').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="images/productos/informacion/p6.webp" alt="Avatar" class="avatar">
+              </div>
+              <div class="inf">
+                <label><b>Toyota Rush</b></label><br>
+                <p>El Toyota Rush está preparado para llevarte por cualquier camino. Ofrece a sus usuarios configuraciones de 7 pasajeros, asientos abatibles para mayor carga, potente sistema de frenos ABS y asistencia electrónica completa. Viene equipado con cierre eléctrico automático de sus 5 puertas cuando el vehículo alcanza una velocidad de 20 km/h.</p>
+              </div>
+            </form>
+          </div>
+        </div><br>
+      </div>
+      <div>
+        <div class="p1">
+          <figure>
+            <img src="images/productos/p7.jpg" height="200px" width="324px">
+            <div class="capa">
+              <h1>Toyota C-HR Híbrida</h1>
+            </div>
+          </figure>
+        </div>
+        <div class="nom">
+          <b>Toyota C-HR Híbrida - CHR2-23</b> 
+        </div>
+        <div class="precio">
+          Precio: Q262,990.00
+        </div><br>
+        <div>
+          <button onclick="document.getElementById('id07').style.display='block'" style="width:auto;">Más Información</button>
+          <div id="id07" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id07').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="images/productos/informacion/p7.webp" alt="Avatar" class="avatar">
+              </div>
+              <div class="inf">
+                <label><b>Toyota C-HR Híbrida</b></label><br>
+                <p>La C-HR combina deportividad, sensualidad y refinamiento, luciéndose en la ciudad tanto en el día como por la noche. Capaz de alcanzar la conducción deseada, por su excepcional respuesta, linealidad y consistencia.</p>
+              </div>
+            </form>
+          </div>
+        </div><br>
+      </div>
+      <div>
+        <div class="p1">
+          <figure>
+            <img src="images/productos/p8.jpg" height="200px" width="324px">
+            <div class="capa">
+              <h1>Toyota Raize</h1>
+            </div>
+          </figure>
+        </div>
+        <div class="nom">
+          <b>Toyota Raize - GK-23</b> 
+        </div>
+        <div class="precio">
+          Precio: Q186,990.00
+        </div><br>
+        <div>
+          <button onclick="document.getElementById('id08').style.display='block'" style="width:auto;">Más Información</button>
+          <div id="id08" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id08').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="images/productos/informacion/p8.webp" alt="Avatar" class="avatar">
+              </div>
+              <div class="inf">
+                <label><b>Toyota Raize</b></label><br>
+                <p>La optimización precisa del motor y los componentes relacionados de la nueva RAIZE permite un vehículo silencioso, compacto y ligero.</p>
+              </div>
+            </form>
+          </div>
+        </div><br>
+      </div>
+      <div>
+        <div class="p1">
+          <figure>
+            <img src="images/productos/p9.jpg" height="200px" width="324px">
+            <div class="capa">
+              <h1>Toyota Hilux</h1>
+            </div>
+          </figure>
+        </div><br>
+        <div class="nom">
+          <b>Toyota Hilux - Doble Cabina 4x4</b> 
+        </div>
+        <div class="precio">
+          Precio: Q225,990.00
+        </div><br>
+        <div>
+          <button onclick="document.getElementById('id09').style.display='block'" style="width:auto;">Más Información</button>
+          <div id="id09" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id09').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="images/productos/informacion/p9.jpg" alt="Avatar" class="avatar">
+              </div>
+              <div class="inf">
+                <label><b>Toyota Hilux</b></label><br>
+                <p>Una nueva era en Pickups, gracias a su eficiencia y capacidad de adaptación a todo tipo de climas, terrenos y usos, en ciudad, carretera e incluso terracería el Toyota Hilux es la solución perfecta a todas tus necesidades.</p>
+              </div>
+            </form>
+          </div>
+        </div><br>
+      </div>
+      <div>
+        <div class="p1">
+          <figure>
+            <img src="images/productos/p10.jpg" height="200px" width="324px">
+            <div class="capa">
+              <h1>Toyota Hilux GR</h1>
+            </div>
+          </figure>
+        </div>
+        <div class="nom">
+          <b>Toyota Hilux GR - Doble Cabina 4x4</b> 
+        </div>
+        <div class="precio">
+          Precio: Q486,990.00
+        </div><br>
+        <div>
+          <button onclick="document.getElementById('id010').style.display='block'" style="width:auto;">Más Información</button>
+          <div id="id010" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id010').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="images/productos/informacion/p10.jpg" alt="Avatar" class="avatar">
+              </div>
+              <div class="inf">
+                <label><b>Toyota Hilux GR</b></label><br>
+                <p>El Hilux Gazoo Racing tiene un motor 2.8 litros turbodiésel intercooler de un 202 caballos de fuerza. Esta versión cuenta con una caja automática secuencial de 6 velocidades y retroceso.</p>
+              </div>
+            </form>
+          </div>
+        </div><br>
+      </div>
+      <div>
+        <div class="p1">
+          <figure>
+            <img src="images/productos/p11.jpg" height="200px" width="324px">
+            <div class="capa">
+              <h1>Toyota Land Cruiser PickUp</h1>
+            </div>
+          </figure>
+        </div>
+        <div class="nom">
+          <b>Toyota Land Cruiser PickUp - J11D8-23</b> 
+        </div>
+        <div class="precio">
+          Precio: Q544,990.00
+        </div><br>
+        <div>
+          <button onclick="document.getElementById('id011').style.display='block'" style="width:auto;">Más Información</button>
+          <div id="id011" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id011').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="images/productos/informacion/p11.webp" alt="Avatar" class="avatar">
+              </div>
+              <div class="inf">
+                <label><b>Toyota Land Cruiser PickUp</b></label><br>
+                <p>El Toyota Land Cruiser ha sido objeto de un meticuloso diseño hasta en los más pequeños detalles, logrando una línea ruda y con mucho estilo, sin dejar de lado un formidable desempeño que te demostrarán con creces porque es histórico y único en su categoría</p>
+              </div>
+            </form>
+          </div>
+        </div><br>
+      </div>
+      <div>
+        <div class="p1">
+          <figure>
+            <img src="images/productos/p12.jpg" height="200px" width="324px">
+            <div class="capa">
+              <h1>Toyota Tundra</h1>
+            </div>
+          </figure>
+        </div><br>
+        <div class="nom">
+          <b>Toyota Tundra - USK1794-22</b> 
+        </div>
+        <div class="precio">
+          Precio: Q501,990.00
+        </div><br>
+        <div>
+          <button onclick="document.getElementById('id012').style.display='block'" style="width:auto;">Más Información</button>
+          <div id="id012" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id012').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="images/productos/informacion/p12.jpg" alt="Avatar" class="avatar">
+              </div>
+              <div class="inf">
+                <label><b>Toyota Tundra</b></label><br>
+                <p>El Toyota Tundra es pick up imponente, potente, con estilo único y propio de uno vehículos Toyota más emblemáticos en toda la historia. El Tundra tiene el máximo espacio posible y cuenta con hasta 650kg de capacidad de carga útil y una fácil apertura y cierre de puerta.</p>
+              </div>
+            </form>
+          </div>
+        </div><br>
+      </div>
+      <div>
+        <div class="p1">
+          <figure>
+            <img src="images/productos/p13.jpg" height="200px" width="324px">
+            <div class="capa">
+              <h1>Toyota HIACE MICROBUS</h1>
+            </div>
+          </figure>
+        </div>
+        <div class="nom">
+          <b>Toyota HIACE MICROBUS - GHHI-23</b> 
+        </div>
+        <div class="precio">
+          Precio: Q448,990.00
+        </div><br>
+        <div>
+          <button onclick="document.getElementById('id013').style.display='block'" style="width:auto;">Más Información</button>
+          <div id="id013" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id013').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="images/productos/informacion/13.webp" alt="Avatar" class="avatar">
+              </div>
+              <div class="inf">
+                <label><b>Toyota HIACE MICROBUS</b></label><br>
+                <p>La Toyota Hiace diseñada para emprendedores que necesitan una máquina de carga perfecta para los objetivos de su negocio, sumamente versátil y de una alta funcionalidad. Déjate sorprender con la nueva Hiace, un espacio tan grande como tus sueños.</p>
+              </div>
+            </form>
+          </div>
+        </div><br>
+      </div>
+      <div>
+        <div class="p1">
+          <figure>
+            <img src="images/productos/p14.jpg" height="200px" width="324px">
+            <div class="capa">
+              <h1>Toyota 4Runner</h1>
+            </div>
+          </figure>
+        </div><br>
+        <div class="nom">
+          <b>Toyota 4Runner - GR1E-23</b> 
+        </div>
+        <div class="precio">
+          Precio: Q449,990.00
+        </div><br>
+        <div>
+          <button onclick="document.getElementById('id014').style.display='block'" style="width:auto;">Más Información</button>
+          <div id="id014" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id014').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="images/productos/informacion/14.webp" alt="Avatar" class="avatar">
+              </div>
+              <div class="inf">
+                <label><b>Toyota 4Runner</b></label><br>
+                <p>La Toyota 4Runner es un clásico en el mundo de los doble tracción, su nivel de robustez siempre lo ha caracterizado, es un vehículo que dejará huella en el segmento de vehículos off road.</p>
+              </div>
+            </form>
+          </div>
+        </div><br>
+      </div>
+      <div>
+        <div class="p1">
+          <figure>
+            <img src="images/productos/p15.jpg" height="200px" width="324px">
+            <div class="capa">
+              <h1>Toyota Corolla Cross Híbrida</h1>
+            </div>
+          </figure>
+        </div>
+        <div class="nom">
+          <b>Toyota Corolla Cross Híbrida - TO-23</b> 
+        </div>
+        <div class="precio">
+          Precio: Q271,990.00
+        </div><br>
+        <div>
+          <button onclick="document.getElementById('id015').style.display='block'" style="width:auto;">Más Información</button>
+          <div id="id015" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id015').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="images/productos/informacion/p15.jpg" alt="Avatar" class="avatar">
+              </div>
+              <div class="inf">
+                <label><b>Toyota Corolla Cross Híbrida</b></label><br>
+                <p>La nueva Corolla Cross combina un diseño moderno, robusto y dinámico. Un amplio espacio en el interior y confort mientras va en marcha, lo convierte en un vehículo ideal para la familia.</p>
+              </div>
+            </form>
+          </div>
+        </div><br>
+      </div>
+      <div>
+        <div class="p1">
+          <figure>
+            <img src="images/productos/p16.jpg" height="200px" width="324px">
+            <div class="capa">
+              <h1>Toyota RAV4 Híbrida</h1>
+            </div>
+          </figure>
+        </div><br>
+        <div class="nom">
+          <b>Toyota RAV4 Híbrida - SH-23</b> 
+        </div>
+        <div class="precio">
+          Precio: Q341,990.00
+        </div><br>
+        <div>
+          <button onclick="document.getElementById('id016').style.display='block'" style="width:auto;">Más Información</button>
+          <div id="id016" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id016').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="images/productos/informacion/p16.webp" alt="Avatar" class="avatar">
+              </div>
+              <div class="inf">
+                <label><b>Toyota RAV4 Híbrida</b></label><br>
+                <p>La quinta generación de RAV4 en su versión híbrida es pura potencia, con una mezcla de sistemas de motorización en la cual su poder eléctrico proporciona una capacidad de respuesta de aceleración y ahorro de combustible inimaginable. Un vehículo diseñado para disponer de espacio, confort, potencia, eficiencia de combustible y una conducción silenciosa y amigable con el medio ambiente.</p>
+              </div>
+            </form>
+          </div>
+        </div><br>
 
+
+
+      </div>
+      
+    </div><br><br><br>
+    <div class="footer">
+      <p>PBX: xxxx-xxxx - Dirección: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+      <p>Carnet: 2021-40011 &nbsp;&nbsp;&nbsp;&nbsp; Nombre: Juan Jose Marroquin del Valle</p>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>

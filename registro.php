@@ -43,26 +43,43 @@
 
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrarse</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="diseños/incio.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/icono.ico">
+
   </head>
   <body>
-
-
-    <h1>registrarse</h1>
-    o <a href="sesion.php">Iniciar sesion</a>
-
-    <form action="registro.php" method="POST">
-      <input name="nombre" type="text" placeholder="Ingrese su nombre">
-      <input name="apellido" type="text" placeholder="Ingrese su apellido">
-      <input name="usuario" type="text" placeholder="Ingrese su usuario">
-      <input name="contraseña" type="password" placeholder="Ingrese su contraseña">
-      <input name="ccontraseña" type="password" placeholder="Confirmar contraseña">
-      <input type="submit" value="registrarse" name="registrarse">
-    </form>
-
+    
+  <img src="images/toyota.png" width="100px">
+    <Table style="background-color: rgba(80, 45, 45, 0.267);">
+        <tr>
+            <td>
+                <b>Registrarse</b>
+                <div class="tabla">
+                <table>
+                    <tr>
+                        <td><br>
+                          <form action="registro.php" method="POST">
+                            <center><input name="nombre" type="text" placeholder="Ingrese su nombre"></center><br>
+                            <center><input name="apellido" type="text" placeholder="Ingrese su apellido"></center><br>
+                            <center><input name="usuario" type="text" placeholder="Ingrese su usuario"></center><br>
+                            <center><input name="contraseña" type="password" placeholder="Ingrese su contraseña"></center><br>
+                            <center><input name="ccontraseña" type="password" placeholder="Confirmar contraseña"></center><br>
+                            <center><input type="submit" value="REGISTRARSE" name="registrarse"></center>
+                          </form>
+                          <div class="bar"><a href="index.php"><input type="submit" value="INICIAR SESIÓN"></a></div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            </td>
+        </tr>
+    </Table>
   </body>
 </html>
+

@@ -24,15 +24,14 @@
  
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="images/icono.ico">
-    <link rel="stylesheet" href="diseños/principal.css">
-    <title>INICIAR SESION</title>
+    <title>Iniciar Sesión</title>
     <link rel="stylesheet" href="diseños/incio.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/icono.ico">
 </head>
 <body>
     <img src="images/toyota.png" width="100px">
@@ -49,13 +48,19 @@
                                 <center><input type="text" name="usuario" placeholder="INGRESE USUARIO"></center><br>
                                 <center><img src="images/contraseña.png" width="60px"></center>
                                 <center><input type="password" name="contraseña" placeholder="INGRESE CONTRASEÑA"></center><br>
-                                <p><input type="submit" value="INGRESAR" name="iniciar"></p>
+                                <center><input type="submit" value="INGRESAR" name="iniciar"></center>
                             </form>
-                            <form action="registro.php" method="post"><p><input type="submit" value="REGISTRARSE" name="re"></p></form>
-                            
                         </td>
                     </tr>
+                    <tr>
+                      <td>
+                        <div class="bot"><a href="registro.php"><input type="submit" value="REGISTRARSE"></a></div>
+                        
+                      </td>
+                    </tr>
                 </table>
+                
+                
             </div>
             </td>
         </tr>

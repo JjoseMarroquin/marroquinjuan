@@ -1,0 +1,42 @@
+.botones{
+  width: 99.191%;
+  text-align: center;
+  font-size:x-large;
+  
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+h1{
+  margin-top: 20px;
+  margin-left: 20px;
+  color:#1D4771;
+}
+input[type=submit]{
+background-color: rgba(201, 163, 204, 0.678);
+border: 1px solid black;
+border-radius: 6px;
+height: 40px;
+width: 200px;
+}
+
+.grid-container {
+display: grid;
+grid-template-columns: auto auto auto auto;
+gap: 20px;
+row-gap: 50px;
+padding: 30px;
+}
+
+.grid-container > div {
+border: 1px solid black;
+text-align: center;
+}
+
+.nom b{
+  font-size: 20px;
+}
+.precio{
+font-size: 17px;
+}

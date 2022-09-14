@@ -10,25 +10,39 @@ table{
 }
 input[type=text]{
     padding: 12px;
-    border: 2px solid rgb(122, 11, 11);
+    border: 1px solid rgb(122, 11, 11);
     margin-top: 6px;
     margin-bottom: 16px;
     text-align: center;
 }
 input[type=password]{
     padding: 12px;
-    border: 2px solid rgb(122, 11, 11);
+    border: 1px solid rgb(122, 11, 11);
     margin-top: 6px;
     margin-bottom: 16px;
     text-align: center;
 }
 input[type=submit]{
+    background-color: rgba(122, 11, 11, 0.801);
+    color: white;
     padding: 10px;
-    border: 2px solid rgb(122, 11, 11);
-    margin-right: 8px;
+    border: 1px solid rgb(122, 11, 11);
+    margin-top: 6px;
+    
     margin-bottom: 20px;
     cursor: pointer;
     width: 170px;
+}
+input[type="submit"]:hover {
+    background-color: rgb(122, 11, 11);
+  }
+
+.bot input[type=submit]{
+    float: right;
+    margin-right: 20px;
+}
+.bar input[type=submit]{
+    margin-left: 20px;
 }
 p{
     padding-right: 4px;
@@ -40,7 +54,7 @@ b{
 .tabla table{
     margin-left:auto;
     margin-right:auto;
-    border: 2px solid rgb(97, 15, 15);
+    border: 1px solid rgb(122, 11, 11);
     border-collapse: collapse;
     width: 700px;
     height: 300px;
